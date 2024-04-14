@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Header } from "../../components/commons/Header";
 import "./Threads.css";
 
@@ -9,9 +10,13 @@ export const ThreadsPagePresenter = ({ threads }) => {
         <div className="title">新着スレッド</div>
         <div className="threadList">
           {threads.map((thread) => (
-            <div key={thread.id} className="threadListItem">
+            <Link
+              key={thread.id}
+              to={`/thread/${thread.id}`}
+              className="threadListItem"
+            >
               {thread.title}
-            </div>
+            </Link>
           ))}
         </div>
       </div>

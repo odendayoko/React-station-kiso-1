@@ -11,12 +11,15 @@
 
 .threadList {
   .threadListItem {
-    border: 1px solid;
+    border: 1px solid black;
     border-bottom: none;
     padding: 10px;
     background-color: #fff;
+    display: block;
+    text-decoration: none;
+    color: black;
   }
   .threadListItem:last-child {
-    border-bottom: 1px solid;
+    border-bottom: 1px solid black;
   }
 }
