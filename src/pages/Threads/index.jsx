@@ -11,7 +11,7 @@ export const ThreadsPage = () => {
       try {
         const response = await axios.get(
           "https://railway.bulletinboard.techtrain.dev/threads",
-          { params: { offset: 1 } }
+          { params: { offset: 0 } }
         );
         setThreads(response.data);
       } catch (error) {

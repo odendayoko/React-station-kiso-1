@@ -37,7 +37,9 @@
   }
 }
 
-#root {
-  height: 100vh;
+body {
   background-color: gainsboro;
+}
+
+#root {
 }

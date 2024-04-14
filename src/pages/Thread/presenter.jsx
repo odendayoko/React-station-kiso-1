@@ -1,7 +1,12 @@
 import { Header } from "../../components/commons/Header";
 import "./Thread.css";
 
-export const ThreadPagePresenter = ({ posts }) => {
+export const ThreadPagePresenter = ({
+  posts,
+  postText,
+  handleChangePostText,
+  handleSubmit,
+}) => {
   return (
     <>
       <Header />
@@ -15,8 +20,17 @@ export const ThreadPagePresenter = ({ posts }) => {
               </div>
             ))}
           </div>
-          <div className="newPostFrom">
-            <form></form>
+          <div className="newPostForm">
+            <form onSubmit={handleSubmit}>
+              <input
+                className="newPostText"
+                type="text"
+                placeholder="投稿しよう！"
+                value={postText}
+                onChange={handleChangePostText}
+              />
+              <button className="newPostButton">投稿</button>
+            </form>
           </div>
         </div>
       </div>
