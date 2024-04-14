@@ -22,9 +22,8 @@ export const ThreadPagePresenter = ({
           </div>
           <div className="newPostForm">
             <form onSubmit={handleSubmit}>
-              <input
+              <textarea
                 className="newPostText"
-                type="text"
                 placeholder="投稿しよう！"
                 value={postText}
                 onChange={handleChangePostText}
