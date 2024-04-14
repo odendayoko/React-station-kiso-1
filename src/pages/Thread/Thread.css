@@ -1,0 +1,35 @@
+.threadContainer {
+  height: 100%;
+  margin: 0 auto;
+  max-width: 900px;
+  width: 80%;
+}
+
+.threadTitle {
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 400;
+  padding: 16px;
+}
+
+.threadBody {
+  display: flex;
+}
+
+.postMain {
+  width: 70%;
+  padding: 16px;
+}
+
+.postListItem {
+  padding: 24px 8px;
+  margin-bottom: 12px;
+  background-color: #fff;
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+.newPostForm {
+  width: 30%;
+}
