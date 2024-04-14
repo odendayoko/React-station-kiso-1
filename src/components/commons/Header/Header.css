@@ -1,0 +1,17 @@
+.header {
+  background-color: pink;
+  height: 50px;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  padding: 12px;
+
+  .headerTitle {
+    font-weight: bold;
+    font-size: x-large;
+  }
+
+  .addButton {
+    text-decoration: underline;
+  }
+}
