@@ -10,6 +10,8 @@ export const NewThreadPage = () => {
       await axios.post("https://railway.bulletinboard.techtrain.dev/threads", {
         title,
       });
+      // alertよりはTopに戻すほうが親切
+      // state初期化したほうがいいかも
       alert("スレッドを投稿しました");
     } catch (error) {
       console.log("error", error);

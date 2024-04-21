@@ -14,6 +14,7 @@ export const ThreadsPagePresenter = ({ threads }) => {
               key={thread.id}
               to={`/thread/${thread.id}`}
               className="threadListItem"
+              state={{ title: thread.title }}
             >
               {thread.title}
             </Link>

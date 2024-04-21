@@ -6,12 +6,13 @@ export const ThreadPagePresenter = ({
   postText,
   handleChangePostText,
   handleSubmit,
+  title,
 }) => {
   return (
     <>
       <Header />
       <div className="threadContainer">
-        <div className="threadTitle">タイトルどうする？？</div>
+        <div className="threadTitle">{title}</div>
         <div className="threadBody">
           <div className="postMain">
             {posts.map((post) => (

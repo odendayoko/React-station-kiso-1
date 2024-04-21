@@ -15,6 +15,7 @@ export const ThreadsPage = () => {
         );
         setThreads(response.data);
       } catch (error) {
+        // TODO エラーハンドリング
         console.log("error", error);
       }
     };

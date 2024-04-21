@@ -1,11 +1,12 @@
 import { useCallback, useEffect, useState } from "react";
 import { ThreadPagePresenter } from "./presenter";
 import axios from "axios";
-import { useParams } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 
 export const ThreadPage = () => {
   const [posts, setPosts] = useState([]);
   const [postText, setPostText] = useState("");
+  const { state } = useLocation();
 
   const { thread_id } = useParams();
 
@@ -51,6 +52,7 @@ export const ThreadPage = () => {
       postText={postText}
       handleChangePostText={handleChangePostText}
       handleSubmit={handleSubmit}
+      title={state.title}
     />
   );
 };
